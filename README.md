@@ -1,4 +1,4 @@
-# CarRental
+# StreamLab
 
 A fully responsive movie streaming website built with **HTML**, **CSS**, **JavaScript** and **SwiperJS** with a clean, modern layout and design.
 
