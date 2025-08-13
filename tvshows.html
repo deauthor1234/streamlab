@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/tvshows.css">
+    <title>StreamLab - Tv Shows Page</title>
+</head>
+<body>
+    <div class="preloader">
+        <img src="css/assets/images/logo-1.png" alt="">
+        <div class="waves">
+            <div class="wave one"></div>
+            <div class="wave two"></div>
+            <div class="wave three"></div>
+            <div class="wave four"></div>
+            <div class="wave five"></div>
+        </div>
+    </div>
+    <div class="signup_wrapper">
+        <div class="signup">
+            <p class="cancel_btn">x</p>
+            <p class="title"><span>SignUp</span> To StreamLab</p>
+            <div class="content">
+                <input type="email" placeholder="Email..." required>
+                <input type="text" placeholder="Name..." required>
+                <input type="password" placeholder="Password..." minlength="6" required>
+                <input type="password" placeholder="Confirm Password..."  minlength="6" required>
+                <button>SignUp</button>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter_wrapper">
+        <div class="newsletter">
+            <p class="cancel_btn">x</p>
+            <p class="title"><span>Subscribe</span> To Our Newsletter</p>
+            <div class="content">
+                <input type="email" placeholder="Email..." required>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="top_content">
+            <img src="css/assets/images/logo-1.png" alt="" class="logo">
+            <div class="navbar">
+                <ul class="nav">
+                        <a class="nav_link" href="./index.html">Home</a>
+                        <a class="nav_link" href="./movies.html">Movies</a>
+                        <a class="active nav_link" href="./tvshows.html">Tv Shows</a>
+                        <a class="nav_link" href="./videos.html">Videos</a>
+                        <a class="nav_link" href="./faq.html">FAQ</a>
+                        <div class="nav_buttons">
+                            <span>
+                                <i class="search_icon alt bx bx-search"></i>
+                                <a href="#" class="user_icon alt bx bxs-user"></a>
+                            </span>
+                            <a class="subscribe_btn alt">SUBSCRIBE</a>
+                        </div>
+                </ul>
+                <i class="menu_icon bx bx-menu"></i>
+                <i class="search_icon bx bx-search"></i>
+                <a id="user_icon" class="user_icon bx bxs-user"></a>
+                <a id="subscribe_btn" class="subscribe_btn">SUBSCRIBE</a>
+            </div>
+        </div>
+    </div>
+    <header class="header_slide_container">
+        <div class="header_content">
+            <img class="header_img" src="css/assets/images/13.jpg" alt="" class="header_bg">
+            <div class="content_wrapper">
+                <div class="header_text">
+                    <h1 class="big_text">Aladin: The Master</h1>
+                    <p class="small_text">StreamLab is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="play_now_btn"><i class="bx bx-play"></i>PLAY NOW</a>
+                </div>
+                <div class="other_movies">
+                    <div class="other_movies_card">
+                        <div class="overlay"></div>
+                        <img src="css/assets/images/20-1.jpg">
+                        <p class="txt">Hero</p>
+                    </div>
+                    <div class="other_movies_card">
+                        <div class="overlay active"></div>
+                        <img src="css/assets/images/13.jpg">
+                        <p class="txt">Aladin: The Master</p>
+                    </div>
+                    <div class="other_movies_card">
+                        <div class="overlay"></div>
+                        <img src="css/assets/images/4-1.jpg">
+                        <p class="txt">Dread Forest</p>
+                    </div>
+                    <div class="other_movies_card">
+                        <div class="overlay"></div>
+                        <img src="css/assets/images/3-3.jpg">
+                        <p class="txt">Love Forever</p>
+                    </div>
+                    <div class="other_movies_card">
+                        <div class="overlay"></div>
+                        <img src="css/assets/images/4.jpg">
+                        <p class="txt">Skull Myth</p>
+                    </div>
+                    <div class="other_movies_card">
+                        <div class="overlay"></div>
+                        <img src="css/assets/images/20-1.jpg">
+                        <p class="txt">Hero</p>
+                    </div>
+                    <div class="other_movies_card">
+                        <div class="overlay"></div>
+                        <img src="css/assets/images/4-1.jpg">
+                        <p class="txt">Dread Forest</p>
+                    </div>
+                    <div class="other_movies_card">
+                        <div class="overlay"></div>
+                        <img src="css/assets/images/3-3.jpg">
+                        <p class="txt">Love Forever</p>
+                    </div>
+                </div>
+                <div class="other_movies_btns">
+                    <i class="bx bx-chevron-up" id="upScrollBtn"></i>
+                    <i class="bx bx-chevron-down" id="downScrollBtn"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="poppular">
+        <div class="container">
+            <p class="heading">Trending TV Shows <a href="#">MORE VIDEOS</a></p>
+        </div>
+        <div class="slide_container swiper">
+            <div class="slide_content">
+                <div class="card_wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/13.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Aladin: The Master</p>
+                            <p class="info">2hr00mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/5-2.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Cloak Of Darkness</p>
+                            <p class="info">1hr22mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/3-3.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Love Forever</p>
+                            <p class="info">1hr24mins <i>.</i> <span>Drama</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/27.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">The Last Witness</p>
+                            <p class="info">1hr35mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/35.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Dynasty Of Hermia</p>
+                            <p class="info">1-Season <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/4-1.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Dread Forest</p>
+                            <p class="info">2hr11mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/8.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Rebuneka The Doll</p>
+                            <p class="info">4hr30mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/20-1.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Hero</p>
+                            <p class="info">4hr00mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/daniel-leone-g30P1zcOzXo-unsplash.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Days Gone</p>
+                            <p class="info">3hr50mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/23-1.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Fight Till Death</p>
+                            <p class="info">3hr00mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/wp5212426-4k-phone-hd-wallpapers.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Wanted Usurper</p>
+                            <p class="info">3hr10mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/2.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">AI</p>
+                            <p class="info">4hr30mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/4.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Skull Of Myths</p>
+                            <p class="info">3hr00mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/14.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">The Wild Apocalypse</p>
+                            <p class="info">3hr00mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtns"></div>
+            <div class="swiper-button-prev swiper-navBtns"></div>
+        </div>
+    </section>
+    <section id="regional">
+        <div class="container">
+            <p class="heading">All Time Hits <a href="#">MORE VIDEOS</a></p>
+        </div>
+        <div class="slide_container swiper">
+            <div class="slide_content">
+                <div class="card_wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/WallpaperDog-20475170.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Sword Of Destruction</p>
+                            <p class="info">1-Season <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/asset-55.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Battle Survival</p>
+                            <p class="info">4hr00mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/asset-57.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Child's Play</p>
+                            <p class="info">3hr50mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/asset-56.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Teenge Dynasty</p>
+                            <p class="info">3hr00mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/asset-42.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Never Quit</p>
+                            <p class="info">2hr00mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/5.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Theive The Bank</p>
+                            <p class="info">1hr22mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/724708.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">The Space Men</p>
+                            <p class="info">1hr24mins <i>.</i> <span>Drama</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/42.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Sapce Voyager</p>
+                            <p class="info">1hr35mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtns"></div>
+            <div class="swiper-button-prev swiper-navBtns"></div>
+        </div>
+    </section>
+    <aside id="banner_two">
+        <div class="container">
+            <div class="banner_slide_container swiper">
+                <div class="banner_slide_content">
+                    <div class="swiper-wrapper">
+                        <div class="banner_content swiper-slide">
+                            <img src="css/assets/images/daniel-leone-g30P1zcOzXo-unsplash.jpg" alt="" class="banner_slide_img">
+                            <div class="banner_text">
+                                <h1 class="big_text">Days Gone</h1>
+                                <p class="small_text">StreamLab is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="play_now_btn"><i class="bx bx-play"></i>PLAY NOW</a>
+                            </div>
+                        </div>
+                        <div class="banner_content swiper-slide">
+                            <img src="css/assets/images/242045-messi-neymar-ronaldo-wallpaper.jpg" alt="" class="banner_slide_img">
+                            <div class="banner_text">
+                                <h1 class="big_text">Legends Of Football</h1>
+                                <p class="small_text">StreamLab is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="play_now_btn"><i class="bx bx-play"></i>PLAY NOW</a>
+                            </div>
+                        </div>
+                        <div class="banner_content swiper-slide">
+                            <img src="css/assets/images/asset-38.jpg" class="banner_slide_img">
+                            <div class="banner_text">
+                                <h1 class="big_text">Soldier Reality</h1>
+                                <p class="small_text">StreamLab is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="play_now_btn"><i class="bx bx-play"></i>PLAY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </aside>
+    <section id="powerful_crime_shows">
+        <div class="container">
+            <p class="heading">Powerful Crime Shows <a href="#">MORE VIDEOS</a></p>
+        </div>
+        <div class="slide_container swiper">
+            <div class="slide_content">
+                <div class="card_wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/242045-messi-neymar-ronaldo-wallpaper.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Legends Of Football</p>
+                            <p class="info">1-Season <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/4-1.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Dread Forest</p>
+                            <p class="info">2hr11mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/8.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Rebuneka The Doll</p>
+                            <p class="info">4hr30mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/13.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Aladin: The Master</p>
+                            <p class="info">2hr00mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/5-2.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Cloak Of Darkness</p>
+                            <p class="info">1hr22mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/27.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">The Last Witness</p>
+                            <p class="info">1hr35mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/20-1.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Hero</p>
+                            <p class="info">4hr00mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/daniel-leone-g30P1zcOzXo-unsplash.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Days Gone</p>
+                            <p class="info">3hr50mins <i>.</i> <span>Action</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/23-1.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Fight Till Death</p>
+                            <p class="info">3hr00mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/wp5212426-4k-phone-hd-wallpapers.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Wanted Usurper</p>
+                            <p class="info">3hr10mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/2.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">AI</p>
+                            <p class="info">4hr30mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/3-3.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Love Forever</p>
+                            <p class="info">1hr24mins <i>.</i> <span>Drama</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/4.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">Skull Of Myths</p>
+                            <p class="info">3hr00mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card_image">
+                            <i class="bx bx-play play_btn"></i>
+                            <img src="css/assets/images/14.jpg" alt="">
+                            <div class="action_icons">
+                                <i class="love bx bx-heart"></i>
+                                <i class="share bx bxs-share-alt"></i>
+                                <i class="plus bx bx-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_text">
+                            <p class="title">The Wild Apocalypse</p>
+                            <p class="info">3hr00mins <i>.</i> <span>Adventure</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtns"></div>
+            <div class="swiper-button-prev swiper-navBtns"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="col long about_col">
+                <img src="css/assets/images/logo-1.png" alt="" class="logo">
+                <p class="info">StreamLab is Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="social_media_icons">
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-instagram"></i>
+                    <i class="bx bxl-skype"></i>
+                    <i class="bx bxl-twitter"></i>
+                </div>
+            </div>
+            <div class="col">
+                <p class="footer_heading">Explore</p>
+                <div class="col_content">
+                    <ul>
+                        <li><a href="#" class="link">Home</a></li>
+                        <li><a href="#" class="link">TV Shows</a></li>
+                        <li><a href="#" class="link">Actors</a></li>
+                        <li><a href="#" class="link">Celebrity</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="link">Movies</a></li>
+                        <li><a href="#" class="link">Videos</a></li>
+                        <li><a href="#" class="link">Basketball</a></li>
+                        <li><a href="#" class="link">Cross</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <p class="footer_heading">Company</p>
+                <div class="col_content">
+                    <ul>
+                        <li><a href="#" class="link">Company</a></li>
+                        <li><a href="#" class="link">Terms Of Use</a></li>
+                        <li><a href="#" class="link">Contact Us</a></li>
+                        <li><a href="#" class="link">Our Team</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="link">Privacy Policy</a></li>
+                        <li><a href="#" class="link">Help Center</a></li>
+                        <li><a href="#" class="link">Subscribe</a></li>
+                        <li><a href="#" class="link">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col long">
+                <p class="footer_heading diff">Download App</p>
+                <p class="info">StreamLab is Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="download_btns">
+                    <a href="#" class="btn"><i class="bx bxl-play-store"></i><div><span>GET IT ON</span>Google Play</div></a>
+                    <a href="#" class="btn"><i class="bx bxl-apple"></i><div><span>GET IT ON</span>App Store</div></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">Copyright 2024 StreamLab. All Rights Reserved.</div>
+    </div>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+</html>
